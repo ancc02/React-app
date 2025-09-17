@@ -6,7 +6,7 @@ export function loadAuthorsSuccess(authors) {
 }
 
 export function loadAuthors() {
-  return function (dispatch) {
+  return function(dispatch) {
     return authorApi
       .getAuthors()
       .then(authors => {
